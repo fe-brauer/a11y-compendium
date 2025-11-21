@@ -10,6 +10,7 @@
 # Uploads & generierte Dateien
 /public/fileadmin/
 /public/uploads/
+/public/_assets/
 
 # Node
 /node_modules/
