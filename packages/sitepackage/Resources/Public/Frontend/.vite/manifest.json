@@ -1,0 +1,11 @@
+{
+  "packages/sitepackage/Resources/Private/Frontend/Main.entry.js": {
+    "file": "assets/Main.entry-DSJ_HMzd.js",
+    "name": "Main.entry",
+    "src": "packages/sitepackage/Resources/Private/Frontend/Main.entry.js",
+    "isEntry": true,
+    "css": [
+      "assets/Main-Cm_lrOhx.css"
+    ]
+  }
+}

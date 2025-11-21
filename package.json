@@ -1,0 +1,28 @@
+{
+  "name": "a11y-comp",
+  "version": "1.0.0",
+  "description": "Get going quickly with TYPO3 CMS.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^7.2.2",
+    "vite-plugin-auto-origin": "^1.2.2",
+    "vite-plugin-live-reload": "^3.0.5",
+    "vite-plugin-typo3": "^2.1.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "tailwindcss": "^4.1.17",
+    "@fontsource-variable/fira-code": "^5.2.7",
+    "@fontsource-variable/merriweather": "^5.2.6",
+    "@fontsource-variable/rubik": "^5.2.8"
+  }
+}
