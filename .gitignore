@@ -1,0 +1,22 @@
+# Composer
+/vendor/
+
+# TYPO3 Runtime
+/var/
+/public/typo3temp/
+/public/_temp_/
+/public/index.php.bak
+
+# Uploads & generierte Dateien
+/public/fileadmin/
+/public/uploads/
+
+# Node
+/node_modules/
+
+# Dev-Umgebung
+/.ddev/
+/.env
+/.idea/
+/.vscode/
+
