@@ -6,7 +6,7 @@ page {
     typeNum = 0
     shortcutIcon = EXT:sitepackage/Resources/Public/Icons/favicon.ico
 
-    bodyTag = <body class="bg-slate-200 font-sans text-slate-800 pt-28">
+    bodyTag = <body class="bg-slate-200 font-sans text-slate-800 pt-20 xl:pt-28">
 
     10 = PAGEVIEW
     10 {
@@ -22,7 +22,6 @@ page {
             20 = menu
             20 {
                 levels = 2
-                includeSpacer = 1
                 as = mainnavigation
             }
             30 = page-content

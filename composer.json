@@ -15,6 +15,13 @@
 		"sort-packages": true
 	},
 	"require": {
+		"b13/container": "^3.1",
+		"brauer/sitepackage": "*",
+		"friendsoftypo3/content-blocks": "^1.3",
+		"helhum/dotenv-connector": "^3.2",
+		"helhum/typo3-console": "^8.2",
+		"ichhabrecht/content-defender": "^3.5",
+		"praetorius/vite-asset-collector": "^1.14",
 		"typo3/cms-backend": "^13.4",
 		"typo3/cms-belog": "^13.4",
 		"typo3/cms-beuser": "^13.4",
@@ -39,14 +46,8 @@
 		"typo3/cms-sys-note": "^13.4",
 		"typo3/cms-tstemplate": "^13.4",
 		"typo3/cms-viewpage": "^13.4",
-		"typo3/cms-webhooks": "^13.4",
-        "b13/container": "^3.1",
-        "brauer/sitepackage": "*",
-        "friendsoftypo3/content-blocks": "^1.3",
-        "helhum/dotenv-connector": "^3.2",
-        "helhum/typo3-console": "^8.2",
-        "praetorius/vite-asset-collector": "^1.14"
-    },
+		"typo3/cms-webhooks": "^13.4"
+	},
     "extra": {
       "helhum/typo3-console": {
         "install-extension-dummy": false,

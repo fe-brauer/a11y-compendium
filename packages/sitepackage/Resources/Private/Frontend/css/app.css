@@ -2,5 +2,31 @@
 
 
 @theme {
+    --color-primary-50: oklch(0.953 0.034 214.97);
+    --color-primary-100: oklch(0.897 0.081 211.55);
+    --color-primary-200: oklch(0.806 0.123 209.67);
+    --color-primary-300: oklch(0.714 0.109 209.02);
+    --color-primary-400: oklch(0.627 0.096 209.57);
+    --color-primary-500: oklch(0.538 0.082 209.38);
+    --color-primary-600: oklch(0.458 0.07 209.86);
+    --color-primary-700: oklch(0.374 0.057 208.94);
+    --color-primary-800: oklch(0.296 0.045 208.95);
+    --color-primary-900: oklch(0.213 0.033 208.88);
+    --color-primary-950: oklch(0.173 0.027 213.36);
+
+    --color-midnight-50: oklch(0.931 0.022 256.74);
+    --color-midnight-100: oklch(0.863 0.046 254.52);
+    --color-midnight-200: oklch(0.714 0.102 248.6);
+    --color-midnight-300: oklch(0.575 0.085 248.45);
+    --color-midnight-400: oklch(0.438 0.064 248.02);
+    --color-midnight-500: oklch(0.294 0.043 248.3);
+    --color-midnight-600: oklch(0.266 0.04 248.2);
+    --color-midnight-700: oklch(0.233 0.034 247.85);
+    --color-midnight-800: oklch(0.196 0.03 249.58);
+    --color-midnight-900: oklch(0.164 0.024 247.94);
+    --color-midnight-950: oklch(0.13 0.018 244.97);
+
     --font-sans: "Rubik Variable", sans-serif;
+    --font-serif: "Merriweather Variable", serif;
+    --font-mono: "Fira Code Variable", monospace;
 }

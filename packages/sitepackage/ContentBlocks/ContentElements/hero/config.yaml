@@ -1,0 +1,12 @@
+name: brauer/hero
+typeName: brauer_hero
+group: default
+prefixFields: true
+prefixType: vendor
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: subheader
+    useExistingField: true
