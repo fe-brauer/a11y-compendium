@@ -30,3 +30,9 @@
     --font-serif: "Merriweather Variable", serif;
     --font-mono: "Fira Code Variable", monospace;
 }
+
+@layer base {
+    .material-symbols-sharp {
+        font-family: 'Material Symbols Sharp Variable', sans-serif;
+    }
+}

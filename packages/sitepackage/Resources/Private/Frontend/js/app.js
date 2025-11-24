@@ -1,6 +1,7 @@
 import "@fontsource-variable/merriweather"
 import "@fontsource-variable/fira-code"
 import "@fontsource-variable/rubik"
+import '@fontsource-variable/material-symbols-sharp';
 
 import './modules/code-tabs';
 

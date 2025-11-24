@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@fontsource-variable/fira-code": "^5.2.7",
+    "@fontsource-variable/material-symbols-sharp": "^5.2.30",
     "@fontsource-variable/merriweather": "^5.2.6",
     "@fontsource-variable/rubik": "^5.2.8",
     "@tailwindcss/vite": "^4.1.17",
