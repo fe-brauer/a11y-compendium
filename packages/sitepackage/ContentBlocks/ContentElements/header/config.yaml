@@ -1,0 +1,13 @@
+name: brauer/header
+typeName: brauer_header
+group: default
+prefixFields: true
+prefixType: vendor
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  - identifier: header_layout
+    useExistingField: true
+  - identifier: header_link
+    useExistingField: true

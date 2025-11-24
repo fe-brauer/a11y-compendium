@@ -1,0 +1,10 @@
+TCEFORM {
+    pages {
+
+    }
+    tt_content {
+        CType {
+            removeItems = header, text, textpic, bullets, image, table, uploads, textmedia, div
+        }
+    }
+}

@@ -1,0 +1,12 @@
+name: brauer/one-column-container
+typeName: brauer_onecolumncontainer
+group: container
+prefixFields: true
+prefixType: vendor
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Links
+fields:
+  -
+    identifier: header
+    useExistingField: true

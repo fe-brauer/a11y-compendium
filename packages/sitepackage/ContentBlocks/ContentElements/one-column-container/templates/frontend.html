@@ -1,0 +1,32 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true"
+>
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <section
+        class="max-w-7xl grid mx-auto w-full"
+        id="c{data.uid}"
+    <f:if condition="{data.aria_label}">
+        <f:then>
+            aria-label="{data.aria_label}"
+        </f:then>
+        <f:else>
+            aria-labelledby="header-{data.uid}"
+        </f:else>
+    </f:if>
+    >
+    <div class="">
+        <f:render partial="Header/All" arguments="{_all}" />
+
+            <div class="col">
+                <f:for each="{children_100}" as="record">
+                    <f:format.raw>{record.renderedContent}</f:format.raw>
+                </f:for>
+            </div>
+    </div>
+    </section>
+</f:section>
+
+</html>

@@ -1,0 +1,23 @@
+lib.contentBlock {
+    layoutRootPaths {
+        0 < lib.contentElement.layoutRootPaths.0
+        10 = EXT:sitepackage/Resources/Private/PageView/Layouts/ContentBlocks/
+    }
+    templateRootPaths {
+        0 < lib.contentElement.templateRootPaths.0
+        10 = EXT:sitepackage/Resources/Private/PageView/Templates/ContentBlocks/
+    }
+    partialRootPaths {
+        0 < lib.contentElement.partialRootPaths.0
+        10 = EXT:sitepackage/Resources/Private/PageView/Partials/ContentBlocks/
+    }
+    settings < lib.contentElement.settings
+
+    dataProcessing {
+        5 = site
+        5 {
+            as = site
+        }
+        10 = content-blocks
+    }
+}

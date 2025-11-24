@@ -1,0 +1,9 @@
+tt_content.brauer_onecolumncontainer {
+    dataProcessing {
+        100 = B13\Container\DataProcessing\ContainerProcessor
+        100 {
+            colPos = 100
+            as = children_100
+        }
+    }
+}

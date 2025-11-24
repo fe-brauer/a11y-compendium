@@ -1,0 +1,72 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+<f:if condition="{header}">
+    <f:switch expression="{layout}">
+        <f:case value="0">
+            <h2 class="{positionClass}" id="{id}">
+                <f:link.typolink parameter="{link}"
+                >{header}</f:link.typolink
+                >
+            </h2>
+        </f:case>
+        <f:case value="1">
+            <h1 class="{positionClass}" id="{id}">
+                <f:link.typolink parameter="{link}"
+                >{header}</f:link.typolink
+                >
+            </h1>
+        </f:case>
+        <f:case value="2">
+            <h2 class="{positionClass}" id="{id}">
+                <f:link.typolink parameter="{link}"
+                >{header}</f:link.typolink
+                >
+            </h2>
+        </f:case>
+        <f:case value="200">
+            <h2 class="{positionClass} has-border border--lightgreen" id="{id}">
+                <f:link.typolink parameter="{link}"
+                >{header}</f:link.typolink
+                >
+            </h2>
+        </f:case>
+        <f:case value="3">
+            <h3 class="{positionClass}" id="{id}">
+                <f:link.typolink parameter="{link}"
+                >{header}</f:link.typolink
+                >
+            </h3>
+        </f:case>
+        <f:case value="4">
+            <h4 class="{positionClass}" id="{id}">
+                <f:link.typolink parameter="{link}"
+                >{header}</f:link.typolink
+                >
+            </h4>
+        </f:case>
+        <f:case value="100">
+            <h2
+                class="{positionClass} {borderClass}"
+                id="{id}"
+                hidden
+                aria-hidden="true"
+            >
+                <f:link.typolink parameter="{link}"
+                >{header}</f:link.typolink
+                >
+            </h2>
+        </f:case>
+        <f:defaultCase>
+            <f:if condition="{default}">
+                <h2 class="{positionClass} {color}">
+                    <f:link.typolink parameter="{link}"
+                    >{header}</f:link.typolink
+                    >
+                </h2>
+            </f:if>
+        </f:defaultCase>
+    </f:switch>
+</f:if>
+</html>
