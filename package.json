@@ -19,10 +19,12 @@
     "vite-plugin-typo3": "^2.1.0"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.17",
-    "tailwindcss": "^4.1.17",
     "@fontsource-variable/fira-code": "^5.2.7",
     "@fontsource-variable/merriweather": "^5.2.6",
-    "@fontsource-variable/rubik": "^5.2.8"
+    "@fontsource-variable/rubik": "^5.2.8",
+    "@tailwindcss/vite": "^4.1.17",
+    "prism-themes": "^1.9.0",
+    "prismjs": "^1.30.0",
+    "tailwindcss": "^4.1.17"
   }
 }

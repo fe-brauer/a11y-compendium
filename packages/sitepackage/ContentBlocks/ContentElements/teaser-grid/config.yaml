@@ -1,0 +1,13 @@
+name: brauer/teaser-grid
+typeName: brauer_teasergrid
+group: default
+prefixFields: true
+prefixType: vendor
+fields:
+  - identifier: header
+    useExistingField: true
+  - identifier: cards
+    type: Collection
+    foreign_table: tx_brauer_componentteaser
+    shareAcrossTables: true
+    shareAcrossFields: true

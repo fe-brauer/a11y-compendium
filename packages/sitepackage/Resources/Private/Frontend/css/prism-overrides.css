@@ -1,0 +1,5 @@
+[data-code-tabs] pre,
+[data-code-tabs] pre code {
+    font-size: 1.125rem !important; /* ≙ text-xs */
+    line-height: 1.5 !important;
+}

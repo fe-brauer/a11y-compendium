@@ -1,0 +1,116 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+<f:variable name="baseId">code-examples-{data.uid}</f:variable>
+
+<div class="w-full max-w-7xl mx-auto" id="c{data.uid}">
+    <f:if condition="{data.header}">
+        <h2 class="mb-4 text-xl font-semibold">
+            {data.header}
+        </h2>
+    </f:if>
+
+    <div
+        class="rounded-xl border bg-slate-950/95 text-slate-50 line-numbers"
+        data-code-tabs
+        id="{baseId}"
+    >
+        <!-- Tab-Header -->
+        <div
+            class="flex items-center border-b border-slate-800 px-4 pt-3 gap-1"
+            role="tablist"
+            aria-label="Code-Beispiele"
+        >
+            <button
+                type="button"
+                class="code-tab px-3 py-2 text-xs sm:text-sm font-medium border-b-2 border-sky-400"
+                role="tab"
+                aria-selected="true"
+                aria-controls="{baseId}-panel-1"
+                id="{baseId}-tab-1"
+                data-target="#{baseId}-panel-1"
+            >
+                <f:if condition="{data.tab1_title}">
+                    <f:then>{data.tab1_title}</f:then>
+                    <f:else>Tab 1</f:else>
+                </f:if>
+            </button>
+
+            <button
+                type="button"
+                class="code-tab px-3 py-2 text-xs sm:text-sm font-medium border-b-2 border-transparent"
+                role="tab"
+                aria-selected="false"
+                aria-controls="{baseId}-panel-2"
+                id="{baseId}-tab-2"
+                data-target="#{baseId}-panel-2"
+            >
+                <f:if condition="{data.tab2_title}">
+                    <f:then>{data.tab2_title}</f:then>
+                    <f:else>Tab 2</f:else>
+                </f:if>
+            </button>
+
+            <button
+                type="button"
+                class="code-tab px-3 py-2 text-xs sm:text-sm font-medium border-b-2 border-transparent"
+                role="tab"
+                aria-selected="false"
+                aria-controls="{baseId}-panel-3"
+                id="{baseId}-tab-3"
+                data-target="#{baseId}-panel-3"
+            >
+                <f:if condition="{data.tab3_title}">
+                    <f:then>{data.tab3_title}</f:then>
+                    <f:else>Tab 3</f:else>
+                </f:if>
+            </button>
+
+            <div class="ml-auto">
+                <button
+                    type="button"
+                    class="code-copy text-[11px] sm:text-xs px-2 py-1 rounded border border-slate-700 hover:bg-slate-800"
+                    data-copy-for="#{baseId}"
+                >
+                    Copy Code
+                </button>
+            </div>
+        </div>
+
+        <!-- Panels -->
+        <div class="p-4 text-xs sm:text-sm">
+            <!-- Panel 1 -->
+            <div
+                class="code-panel"
+                id="{baseId}-panel-1"
+                role="tabpanel"
+                aria-labelledby="{baseId}-tab-1"
+            >
+                    <pre class="overflow-auto text-base leading-relaxed line-numbers"><code class="language-{data.tab1_language}">{data.tab1_code -> f:format.htmlspecialchars(encoding: 'UTF-8', doubleEncode: false)}</code></pre>
+            </div>
+
+            <!-- Panel 2 -->
+            <div
+                class="code-panel hidden"
+                id="{baseId}-panel-2"
+                role="tabpanel"
+                aria-labelledby="{baseId}-tab-2"
+            >
+                    <pre class="overflow-auto text-base leading-relaxed line-numbers whitespace-pre-wrap"><code class="language-{data.tab2_language}">{data.tab2_code -> f:format.htmlspecialchars(encoding: 'UTF-8', doubleEncode: false)}</code></pre>
+            </div>
+
+            <!-- Panel 3 -->
+            <div
+                class="code-panel hidden"
+                id="{baseId}-panel-3"
+                role="tabpanel"
+                aria-labelledby="{baseId}-tab-3"
+            >
+                    <pre class="overflow-auto text-base leading-relaxed line-numbers whitespace-pre-wrap"><code class="language-{data.tab3_language}">{data.tab3_code -> f:format.htmlspecialchars(encoding: 'UTF-8', doubleEncode: false)}</code></pre>
+            </div>
+        </div>
+    </div>
+</div>
+</html>

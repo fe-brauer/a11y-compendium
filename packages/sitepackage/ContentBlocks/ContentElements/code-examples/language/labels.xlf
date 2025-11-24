@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2025-11-24T12:28:46+00:00" product-name="brauer/code-examples">
+		<header/>
+		<body>
+			<trans-unit id="title">
+				<source>Code Examples</source>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>Description for Content Element brauer/code-examples</source>
+			</trans-unit>
+			<trans-unit id="tab1_title.label">
+				<source>tab1_title</source>
+			</trans-unit>
+			<trans-unit id="tab1_language.label">
+				<source>tab1_language</source>
+			</trans-unit>
+			<trans-unit id="tab1_code.label">
+				<source>tab1_code</source>
+			</trans-unit>
+			<trans-unit id="tab2_title.label">
+				<source>tab2_title</source>
+			</trans-unit>
+			<trans-unit id="tab2_language.label">
+				<source>tab2_language</source>
+			</trans-unit>
+			<trans-unit id="tab2_language.items.html.label">
+				<source>HTML</source>
+			</trans-unit>
+			<trans-unit id="tab2_language.items.css.label">
+				<source>CSS</source>
+			</trans-unit>
+			<trans-unit id="tab2_language.items.js.label">
+				<source>JavaScript</source>
+			</trans-unit>
+			<trans-unit id="tab2_code.label">
+				<source>tab2_code</source>
+			</trans-unit>
+			<trans-unit id="tab3_title.label">
+				<source>tab3_title</source>
+			</trans-unit>
+			<trans-unit id="tab3_language.label">
+				<source>tab3_language</source>
+			</trans-unit>
+			<trans-unit id="tab3_code.label">
+				<source>tab3_code</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,44 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+<section class="w-full bg-white">
+    <div class="flex flex-col max-w-7xl mx-auto p-4 py-10 xl:px-0">
+        <h2 class="text-slate-900 text-3xl font-bold leading-tight mb-8">
+            {data.header}
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <f:for as="card" each="{data.cards}">
+                <f:link.typolink additionalAttributes="{id: 'card-{card.uid}', aria-labelledby: 'card-title-{card.uid}', aria-describedby: 'card-description-{card.uid}'}" parameter="{card.link}" class="group pb-3 bg-white rounded-xl overflow-hidden outline-0 border border-slate-200 focus-visible:outline-4 focus-visible:outline-primary-600">
+                    <div class="flex flex-col gap-3 ">
+                        <div class="p-4 flex flex-col gap-2 order-1 ">
+                            <p class="text-primary-700 text-sm font-light uppercase">{card.category}</p>
+                            <h3 id="card-title-{card.uid}" class="text-slate-900 text-xl font-bold leading-normal group-hover:text-primary-500 transition-colors">
+                                {card.title}
+                            </h3>
+                            <p class="text-slate-600 text-base font-normal leading-normal" id="card-description-{card.uid}">
+                                {card.bodytext}
+                            </p>
+                        </div>
+                        <div class="aspect-video order-0">
+                            <f:image image="{card.image.0}" fileExtension="webp" class="aspect-video object-cover h-full" />
+                        </div>
+                    </div>
+                </f:link.typolink>
+            </f:for>
+
+            <f:comment>
+                <div
+                    class="min-h-[250px] sm:col-span-2 lg:col-span-1 flex flex-col items-center justify-center p-4 bg-slate-100 dark:bg-slate-800/50 rounded-xl border border-dashed border-slate-300 dark:border-slate-700"
+                >
+                    <p class="text-slate-500 dark:text-slate-400 text-sm">Advertisement</p>
+                    <p class="text-slate-400 dark:text-slate-500 text-xs">300 x 250</p>
+                </div>
+            </f:comment>
+
+        </div>
+
+    </div>
+</section>
+</html>

@@ -1,0 +1,34 @@
+name: brauer/component-teaser
+table: tx_brauer_componentteaser
+prefixFields: false
+labelField: title
+security:
+  ignorePageTypeRestriction: true
+fields:
+  -
+    identifier: title
+    type: Text
+    label: Title
+  -
+    identifier: category
+    type: Text
+    label: Category
+  -
+    identifier: link
+    type: Link
+    label: Link
+  - identifier: image
+    type: File
+    label: Image
+    maxItems: 1
+    cropVariants:
+      default:
+        title: Teaser
+        allowedAspectRatios:
+          landscape:
+            title: Landscape
+            value: 16 / 9
+  - identifier: bodytext
+    type: Textarea
+    label: Bodytext
+

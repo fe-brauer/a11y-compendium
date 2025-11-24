@@ -1,0 +1,76 @@
+name: brauer/code-examples
+typeName: brauer_codeexamples
+group: default
+prefixFields: true
+prefixType: vendor
+icon: content-code
+basics:
+  - TYPO3/Appearance
+fields:
+  # Überschrift: vorhandenes Feld "header" wiederverwenden
+  - identifier: header
+    useExistingField: true
+
+  # Tab 1
+  - identifier: tab1_title
+    type: Text
+    default: 'HTML'
+
+  - identifier: tab1_language
+    type: Select
+    renderType: selectSingle
+    default: html
+    items:
+      - value: html
+        label: "HTML"
+      - value: css
+        label: "CSS"
+      - value: js
+        label: "JavaScript"
+
+  - identifier: tab1_code
+    type: Textarea
+    rows: 14
+
+  # Tab 2
+  - identifier: tab2_title
+    type: Text
+    default: 'CSS'
+
+  - identifier: tab2_language
+    type: Select
+    renderType: selectSingle
+    default: css
+    items:
+      - value: html
+        label: "HTML"
+      - value: css
+        label: "CSS"
+      - value: js
+        label: "JavaScript"
+
+  - identifier: tab2_code
+    type: Textarea
+    rows: 14
+
+  # Tab 3
+  - identifier: tab3_title
+    type: Text
+    default: 'JavaScript'
+
+  - identifier: tab3_language
+    type: Select
+    renderType: selectSingle
+    default: js
+    items:
+      - value: html
+        label: "HTML"
+      - value: css
+        label: "CSS"
+      - value: js
+        label: "JavaScript"
+
+  - identifier: tab3_code
+    type: Textarea
+    rows: 14
+
